@@ -23,7 +23,7 @@ all: $(TARGETS)
 ifneq ($(or $(findstring $(NIF_DEBUG),1 true),$(findstring test,$(REBAR_ENV))),)
   ADDFLAGS := -DDEBUG -O0
 else
-  ADDFLAGS := -O3 -DNDEBUG
+  ADDFLAGS := -O2 -DNDEBUG
 	V        := 0
 endif
 
